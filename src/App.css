@@ -1,5 +1,92 @@
 
 
+
+
+/* 
+.box-1{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: left;
+    align-items: center;
+} */
+
+
+.home{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.home img{
+    width: 100%;
+    object-fit: contain;
+    height: 40px;
+}
+
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeAnimation-1 {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 200px;
+    animation: fadeAnimation 2s ease 1;
+    animation-delay: 2s;
+}
+.phone-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 200px;
+    animation: fadeAnimation-1 2s ease 1;
+    animation-delay: 2s;
+}
+.ui{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.phone-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 200px;
+    animation: fadeAnimation 2s linear 1;
+    animation-delay: 2s;
+}
+
 :root {
     font-family: 'DM-sans', sans-serif;
 }
@@ -7,28 +94,53 @@
     box-sizing: border-box;
     outline: none;
 }
-html, body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-}
+
 body {
-    background-image: url("https://images.unsplash.com/photo-1675000960168-ea95f1a5d8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1675000960168-ea95f1a5d8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"); */
     background-repeat: no-repeat;
     background-size: cover;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
       animation-name: colorChange;
       animation-duration: 50s;
       animation-timing-function: ease-in-out; 
       animation-iteration-count: infinite;
+      
+}
+.vido{
+    display: flex;
+    width: 100%;
+    
+    overflow: hidden;
+    
+}
+.vido button{
+    position: absolute;
+    width: 50%;
+    /* height: 50%; */
+    top: 25%;
+    left: 25%;
+    right: 20%;
+    color: white;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    
 }
 
-@keyframes colorChange {
+
+.vide{
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100vh;
+
+    
+}
+
+/* @keyframes colorChange {
     0% {
         background-image: url("https://images.unsplash.com/photo-1689509293409-330dcbdf9240?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=385&q=80");
     }
@@ -62,7 +174,7 @@ body {
     100% {
         background-image: url("https://images.unsplash.com/photo-1689509293409-330dcbdf9240?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=385&q=80");
     }
-  }
+  } */
 
 button {
     background: transparent;
@@ -76,13 +188,14 @@ img {
     height: 100%;
 }
 .music-app {
-    position: relative;
+    /* position: relative; */
     background-color: #1f2128;
     width: 320px;
     height: 620px;
     border-radius: 30px;
     box-shadow: 0px 0px 2px 0px rgba(40, 42, 53, 0.28);
     overflow: hidden;
+    
     display: flex;
     flex-direction: column;
 }
@@ -97,23 +210,28 @@ img {
     position: relative;
     width: 100%;
     height: 160px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdRRHdlunPcAjQv4Te4yDrxAhB65XM33CGYr1F8ydm58DI1ynshQYYOu1nT9m7oFsyhL8&usqp=CAU");
-    background-size: cover;
-    background-position: center -40px;
+    /* background-image: url("https://images.unsplash.com/photo-1519245659620-e859806a8d3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"); */
+    background-size: contain;
     padding-top: 70px;
     background-repeat: no-repeat;
 }
 .artist {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    /* left: 50%; */
+    top: 0;
+    /* transform: translate(-50%, 50%); */
     bottom: 0;
-    width: 80px;
+    width: 100%;
     height: 80px;
     border-radius: 50%;
-    background-image: url("https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/06/22/diljit-instagram-diljitdosanjh-1120294-1655881903.jpg?itok=2mutNHVl");
     background-size: cover;
     border: 10px solid #1f2128;
+}
+.artist img{
+    width: 100%;    
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 150px;
 }
 .cover-title {
     color: #fff;
@@ -252,6 +370,23 @@ img {
 .album-wrapper {
     width: 33.3%;
     text-align: center;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    
+}
+.photo{
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.album-cover-1{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .album-wrapper .info-title, .album-wrapper .info-subtitle {
     cursor: pointer;
@@ -519,3 +654,27 @@ img {
 }
 
 
+
+
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  
+  
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
